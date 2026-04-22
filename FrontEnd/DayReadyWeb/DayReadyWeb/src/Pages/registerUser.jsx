@@ -53,24 +53,27 @@ export default function RegisterUser() {
   };
 
   return (
-    <div className="min-h-screen w-screen bg-gradient-to-br from-orange-50 to-white flex items-center justify-center overflow-x-hidden py-8">
-      <div className="w-full max-w-xl px-4">
-        {/* Logo */}
-        <div className="text-center mb-12">
+    <div className="min-h-screen w-screen bg-gradient-to-br from-orange-50 to-white flex items-center justify-center overflow-x-hidden py-4">
+      <div className="w-full max-w-md px-4">
+        
+
+        {/* Formulario */}
+        <form onSubmit={handleSubmit} className="bg-white rounded-2xl shadow-lg p-6 max-w-md mx-auto">
+
+             {/* Logo */}
+        <div className="text-center mb-4">
           <img
             src={dayReadyLogo}
             alt="Day Ready Logo"
-            className="w-48 h-auto mx-auto object-contain"
+            className="w-32 h-auto mx-auto object-contain"
           />
         </div>
 
         {/* Subtítulo */}
-        <div className="text-center mb-6">
-          <p className="text-gray-600 text-sm">Ingresa tus datos para el registro</p>
+        <div className="text-center mb-3">
+          <p className="text-gray-600 text-xs">Ingresa tus datos para el registro</p>
         </div>
 
-        {/* Formulario */}
-        <form onSubmit={handleSubmit} className="bg-white rounded-2xl shadow-lg p-8 max-w-lg mx-auto">
           <InputField
             label="Nombres"
             type="text"
@@ -127,39 +130,39 @@ export default function RegisterUser() {
           />
 
           {/* Botón Registrarse */}
-          <div className="mb-4">
+          <div className="mb-3">
             <button
               type="submit"
               disabled={loading}
-              className="w-full bg-green-500 hover:bg-green-600 active:bg-green-700 text-white font-semibold py-3 rounded-lg transition duration-300 disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center"
+              className="w-full bg-green-500 hover:bg-green-600 active:bg-green-700 text-white font-medium py-2 text-sm rounded-lg transition duration-300 disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center"
             >
               {loading ? <LoadingSpinner /> : 'Registrarse'}
             </button>
           </div>
 
           {/* Enlaces */}
-          <div className="text-center">
-            <span className="text-gray-600 text-sm">¿Ya tienes cuenta? </span>
+          <div className="text-center mb-3">
+            <span className="text-gray-600 text-xs">¿Ya tienes cuenta? </span>
             <button
               type="button"
               onClick={() => navigate('/')}
-              className="text-orange-400 hover:text-orange-500 text-sm font-medium"
+              className="text-orange-400 hover:text-orange-500 text-xs font-medium"
             >
               Iniciar sesión
             </button>
           </div>
 
           {/* Divisor */}
-          <div className="flex items-center my-6">
+          <div className="flex items-center my-3">
             <div className="flex-1 border-t border-gray-300"></div>
-            <span className="px-3 text-gray-400 text-sm">o</span>
+            <span className="px-3 text-gray-400 text-xs">o</span>
             <div className="flex-1 border-t border-gray-300"></div>
           </div>
 
           {/* Google Login */}
           <button
             type="button"
-            className="w-full flex items-center justify-center gap-2 bg-white border-2 border-gray-200 hover:border-gray-300 rounded-lg py-3 transition"
+            className="w-full flex items-center justify-center gap-2 bg-white border-2 border-gray-200 hover:border-gray-300 rounded-lg py-2 text-sm transition"
           >
             <svg
               className="w-5 h-5"
