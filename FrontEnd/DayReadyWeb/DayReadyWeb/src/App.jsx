@@ -2,6 +2,7 @@ import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import LoginAdmin from './Pages/loginAdmin';
 import RegisterUser from './Pages/registerUser';
+import RecoveryPass from './Pages/recoveryPass';
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       <Routes>
         <Route path="/" element={<LoginAdmin />} />
         <Route path="/registro" element={<RegisterUser />} />
+        <Route path="/recuperar-contrasena" element={<RecoveryPass />} />
       </Routes>
     </Router>
   );

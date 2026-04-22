@@ -101,6 +101,7 @@ export default function LoginAdmin() {
             <div>
               <button
                 type="button"
+                onClick={() => navigate('/recuperar-contrasena')}
                 className="text-orange-400 hover:text-orange-500 text-sm font-medium"
               >
                 ¿Olvidaste tu contraseña?
