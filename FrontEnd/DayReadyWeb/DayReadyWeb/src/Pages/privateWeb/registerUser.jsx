@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import InputField from '../Components/InputField';
-import Button from '../Components/Button';
-import LoadingSpinner from '../Components/LoadingSpinner';
-import dayReadyLogo from '../imgs/DayReadyLogo.png';
+import InputField from '../../Components/InputField';
+import Button from '../../Components/Button';
+import LoadingSpinner from '../../Components/LoadingSpinner';
+import dayReadyLogo from '../../imgs/DayReadyLogo.png';
 
 export default function RegisterUser() {
   const navigate = useNavigate();

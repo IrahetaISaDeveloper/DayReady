@@ -1,8 +1,8 @@
 import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import LoginAdmin from './Pages/loginAdmin';
-import RegisterUser from './Pages/registerUser';
-import RecoveryPass from './Pages/recoveryPass';
+import LoginAdmin from './Pages/privateWeb/loginAdmin';
+import RegisterUser from './Pages/privateWebregisterUser';
+import RecoveryPass from './Pages/privateWebrecoveryPass';
 
 function App() {
   return (

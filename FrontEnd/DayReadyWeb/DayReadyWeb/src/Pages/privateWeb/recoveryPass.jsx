@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import InputField from '../Components/InputField';
-import LoadingSpinner from '../Components/LoadingSpinner';
+import InputField from '../../Components/InputField';
+import LoadingSpinner from '../../Components/LoadingSpinner';
 
 export default function RecoveryPass() {
   const navigate = useNavigate();
